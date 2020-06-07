@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/home1"
+
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register"
+            />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login" />
+    </LinearLayout>
+    <include layout="@layout/user_registration"
+        android:visibility="gone"/>
+    <include layout="@layout/login"
+        android:visibility="gone"/>
+    <include layout="@layout/book_appointment1"
+        android:visibility="gone"/>
+
+    <include layout="@layout/book_appointment4"
+        android:visibility="gone"/>
+    <include layout="@layout/home_page"
+        android:visibility="gone"/>
+    <include layout="@layout/delete_appointment"
+        android:visibility="gone"/>
+
+<include layout="@layout/select_timing"
+    android:visibility="gone"/>
+<include layout="@layout/select_doctor"
+    android:visibility="gone"/>
+    <include layout="@layout/appointment_date"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>
